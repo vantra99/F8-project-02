@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins";
+}
+
+/* common */
+.content {
+  width: 1170px;
+  max-width: calc(100vw - 48px);
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======= Header-fix ======== */
+.header {
+  background: #fffcf4;
+  height: 900px;
+  width: 100vw;
+}
+
+.header-fix {
+  padding-top: 36px;
+  height: 50px;
+}
+
+.header-fix img {
+  margin-right: 512px;
+}
+
+.header-fix .nav a {
+  position: relative;
+  text-align: center;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  text-decoration: none;
+}
+
+.header-fix .nav li:nth-child(2) a::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+  top: 20px;
+  left: 0;
+}
+
+.nav a:hover,
+.nav li.active a {
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor; /*cách này thay cho font-weight, cấu trúc ui li không bị giật khi rê mouse vào hover*/
+}
+
+.header-fix .nav li {
+  padding-left: 41px;
+}
+
+.header-fix .nav li:first-child {
+  padding-left: 0;
+}
+
+.header-fix .nav li:last-child {
+  padding-right: 41px;
+}
+
+.header-fix .signup {
+  text-decoration: none;
+  min-width: 144px;
+  height: 50px;
+  border-radius: 25px;
+  background: #171100;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  margin-left: auto;
+}
+
+.header-fix .signup:hover {
+  opacity: 0.9;
+}
+
+/* <!-- header-body --> */
+.header-body {
+  margin-top: 64px;
+}
+.header-body .img-lesson {
+  position: relative;
+}
+.header-body .img-lesson .lesson {
+  width: 470px;
+  height: 685px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.img-lesson .base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 5px 24px 24px;
+  position: absolute;
+  top: 393px;
+  right: -100px;
+  width: 270px;
+  height: 244px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.img-lesson .base li {
+  margin-top: 14px;
+}
+
+.img-lesson .base li:first-child {
+  margin-top: 0;
+}
+
+.img-lesson .base .bg-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--bg-custom, #f2f2f2);
+  border-radius: 50%;
+}
+
+.img-lesson .base p {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.img-lesson .base strong {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.img-lesson .base .sub-base {
+  padding-left: 16px;
+}
+
+.content-lesson {
+  width: 470px;
+  height: 558px;
+  margin-left: auto;
+}
+.content-lesson .tittle {
+  color: #171100;
+  font-family: Sen;
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1.16px;
+  width: 470px;
+}
+
+.content-lesson .desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+  padding-top: 22px;
+}
+
+.content-lesson .total-btn {
+  padding-top: 38px;
+}
+
+.content-lesson .total-btn .btn-course {
+  width: 180px;
+  height: 64px;
+  border-radius: 32px;
+  background: #ffb900;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+  text-decoration: none;
+}
+
+.content-lesson .total-btn .btn-play {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: ffff;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 28px;
+}
+
+.content-lesson .total-btn .btn-play::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  border: 8px solid;
+  border-color: transparent transparent transparent #ffb900;
+}
+
+.content-lesson .total-btn p {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+  padding-left: 14px;
+}
+
+.content-lesson p:nth-of-type(2) {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+  padding: 48px 0 8px;
+}
+
+.content-lesson .number-stu {
+  display: flex;
+  align-items: flex-end;
+}
+
+.content-lesson .number-stu + .number-stu {
+  padding-left: 28px;
+}
+.content-lesson .number-stu strong {
+  color: #171100;
+  font-family: Sen;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.23;
+}
+
+.content-lesson .number-stu p {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
+  padding-left: 10px;
+}
