@@ -35,15 +35,14 @@ body {
 }
 
 /* ======= Header-fix ======== */
-.header {
-  background: #fffcf4;
-  height: 900px;
-  width: 100vw;
-}
-
 .header-fix {
-  padding-top: 36px;
-  height: 50px;
+  padding: 36px 0 8px;
+  position: sticky;
+  top: -28px;
+  left: 0;
+  right: 0;
+  background-color: #fffcf4;
+  z-index: 1;
 }
 
 .header-fix img {
@@ -109,7 +108,10 @@ body {
 
 /* <!-- header-body --> */
 .header-body {
-  margin-top: 64px;
+  padding-top: 56px;
+  background: #fffcf4;
+  height: calc(900px - 94px);
+  width: 100vw;
 }
 .header-body .img-lesson {
   position: relative;
@@ -208,6 +210,10 @@ body {
   text-decoration: none;
 }
 
+.content-lesson .total-btn .btn-course:hover {
+  opacity: 0.9;
+}
+
 .content-lesson .total-btn .btn-play {
   position: relative;
   width: 40px;
@@ -265,4 +271,133 @@ body {
   font-weight: 400;
   line-height: 30px;
   padding-left: 10px;
+}
+
+/* =========== Courses ============ */
+.courses {
+  height: 645px;
+  margin: 200px 0 200px;
+}
+
+.courses .header-courses {
+  color: #171100;
+  font-family: Sen;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+
+.courses .desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+  width: 458px;
+  padding-top: 16px;
+}
+
+.courses .icon {
+  width: 98px;
+  height: 40px;
+}
+
+.courses .icon a {
+  text-decoration: none;
+  line-height: 100%;
+}
+
+.courses .icon a i {
+  font-size: 40px;
+  color: #fea31b;
+}
+.courses .icon a + a {
+  padding-left: 20px;
+}
+
+.courses .sum-courses {
+  margin-top: 55px;
+  gap: 30px;
+}
+
+.courses .sum-courses .item-coures {
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.courses .name-courses {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 22px 22px 22px;
+}
+
+.courses .item-coures a img {
+  width: 370px;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.item-coures .rating-courses {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item-coures .rating-courses .star {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+}
+
+.item-coures .rating-courses span {
+  color: #fea31b;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  padding-left: 6px;
+}
+
+.item-coures .rating-courses strong {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.item-coures .desc {
+  width: 326px;
+  text-wrap: wrap;
+  padding-top: 6px;
+}
+
+.item-coures .buy {
+  width: 100%;
+  padding-top: 12px;
+  justify-content: space-between;
+}
+
+.item-coures .buy .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.item-coures .buy .btn-buy {
+  width: 118px;
+  height: 50px;
+  border-radius: 25px;
+  background: #171100;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+  text-decoration: none;
+}
+
+.item-coures .buy .btn-buy:hover,
+.item-coures .buy .btn-buy.active {
+  background: #ffb900;
+  transition: 0.4s;
 }
