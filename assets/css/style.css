@@ -34,6 +34,12 @@ body {
   align-items: center;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 4);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 /* ======= Header-fix ======== */
 .header-fix {
   padding: 36px 0 8px;
@@ -400,4 +406,71 @@ body {
 .item-coures .buy .btn-buy.active {
   background: #ffb900;
   transition: 0.4s;
+}
+
+/*============ feedback ==============*/
+.feedback {
+  height: 380px;
+  padding: 96px 0 96px;
+  background: #2e2100;
+}
+
+.feedback .infor {
+  width: 159px;
+  height: 188px;
+}
+
+.infor .avatar {
+  display: flex;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.infor .name {
+  padding-top: 18px;
+  color: #f7f7f7;
+  font-family: Sen;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+
+.infor .job {
+  padding-top: 4px;
+  color: #bfbcb2;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.infor .next-infor {
+  padding-top: 28px;
+  display: flex;
+  gap: 4px;
+}
+.circle {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-active, #634700);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.feedback .comment {
+  width: 770px;
+  height: 188px;
+  margin-left: auto;
+}
+
+.comment .desc {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.54;
+  padding-left: 30px;
 }
