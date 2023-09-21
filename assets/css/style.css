@@ -19,7 +19,7 @@ body {
 /* common */
 .line {
   margin: 12px 0;
-  width: 160px;
+  width: var(--width, 160px);
   height: 1px;
   border-radius: 0.5px;
   background: #e2dfda;
@@ -74,8 +74,8 @@ body {
 }
 /* ======= Header-fix ======== */
 .header-fix {
-  padding: 36px 0 8px;
   position: sticky;
+  padding: 36px 0 8px;
   top: -28px;
   left: 0;
   right: 0;
@@ -553,4 +553,76 @@ body {
 .blog .next-blog {
   padding-top: 38px;
   gap: 4px;
+}
+
+/*============= footer ============*/
+.footer {
+  background: #2e2100;
+  padding: 96px 0 28px;
+}
+
+.footer .footer-total {
+  gap: 130px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.item-footer:first-child h3 {
+  color: #fff;
+  font-family: Sen;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+
+.item-footer:first-child p {
+  width: 267px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+  margin: 18px 0;
+}
+
+.footer-total :not(.item-footer:first-child) h3 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.footer-total :not(.item-footer:first-child) .line {
+  width: 130px;
+  margin: 14px 0 28px;
+}
+
+.footer-total :not(.item-footer:first-child) p {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.footer-total :not(.item-footer:first-child) p + p {
+  padding-top: 12px;
+}
+
+.footer-total .item-footer:last-child p > strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+}
+
+.footer-total .item-footer:last-child p + p {
+  padding-top: 12px;
+}
+
+.footer .copyright {
+  color: #807d74;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
 }
