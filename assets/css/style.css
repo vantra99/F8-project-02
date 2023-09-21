@@ -97,7 +97,7 @@ body {
   text-decoration: none;
 }
 
-.header-fix .nav li:nth-child(2) a::after {
+.header-fix .nav li:nth-child(1) a::after {
   position: absolute;
   content: "";
   width: 12px;
@@ -297,8 +297,8 @@ body {
 
 /* =========== Courses ============ */
 .courses {
-  height: 645px;
-  margin: 200px 0 200px;
+  height: 1045px;
+  padding: 200px 0 200px;
 }
 
 .courses .header-courses {
